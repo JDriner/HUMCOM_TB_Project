@@ -1,0 +1,312 @@
+body{
+    font-family:cursive;
+    font-size: 20px;
+    line-height:1.5;
+    padding:0;
+    margin:0;
+    background-color:#e6dbc9;
+  }
+  
+  /*container*/  
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+
+  .container a{
+    text-decoration:none;
+  }
+
+  .container a:hover{
+    color:#f60a0a;
+    font-weight:bold;
+  }
+  
+  ul{
+    margin:auto;
+    padding:0;
+  }
+
+  footer a{
+    font-size:15px;
+    color: rgb(178, 210, 214);
+  }
+
+  /* Header*/
+  header{
+    background:rgb(57, 49, 107);
+    color:#ffffff;
+    padding-top:30px;
+    min-height:30px;
+    border-bottom:#a01a1a 5px solid;
+
+  }
+  
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:13px;
+  }
+  
+  header li{
+    display:inline;
+    padding: 0 15px 0 15px;
+  }
+  
+  header #tagline{
+    float:left;
+    padding-right:10px;
+    text-shadow:2px 2px 2px #f80e0e;
+  }
+  
+  header .logo img{
+    width:20%;
+    margin:0;
+  }
+  
+  header #tagline h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:#eede06;
+    font-weight:bold;
+  }
+  
+
+  /*Tables*/
+
+  table{
+    background-color: rgb(219, 175, 175);
+    font-family:cursive;
+    margin:auto;
+    padding: 30px;
+    overflow:hidden;
+  }
+  
+  #forms table th{
+    text-align:right;
+    width:30%;
+  }
+  #forms table, td{
+    text-align:left;
+    width:50%;
+  }
+
+  #forms tr:hover {
+    background-color: #e27979;
+  }
+
+  textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  /* Showcase */
+  #showcase{
+    min-height:410px;
+    background:url('../resources/fofoloys.jpg') no-repeat 0 -250px;
+    text-align:center;
+    color:#fdfdfd;
+    text-shadow:5px 5px 5px #2c0303;
+    margin-bottom: 30px;
+  }
+  
+  #showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+  /* Boxes */
+  #boxes{
+    margin:20px;
+  }
+
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:33%;
+    padding:50 50px;
+  }
+  
+  #boxes .box img{ 
+    width: 200px;
+    cursor: pointer;
+    padding: 50 50px;
+    margin:20px;
+  }
+    
+  #boxes .box:hover{
+    border-radius: 10%;
+  	background-color: #a69ab6;
+
+  }
+  
+  /*ARTICLES*/
+  /* First Article */
+ 
+  table img{
+    width:350px;
+  } 
+  #first{
+    width:100%;
+    float:left;
+    
+  }
+  #first table{
+    float:left;
+    width: 10%;
+    margin-right: 10px;
+    font-size: 13px;
+    background-color:#b47474;
+  }
+   /* Second Article */
+   #second{
+    float:left;
+    width: 100%;
+    
+  }
+  #second table{
+    width:30%;
+    float:right;
+    margin:10px;
+    font-size: 13px;
+    background-color:#b47474;
+  }
+
+  /* Third Article */
+  #third{
+    width:100%;
+    float:right;
+  }
+
+  #third table{
+    width:30%;
+    float:right;
+    margin:10px;
+    font-size: 13px;
+    background-color:#b47474;
+  }
+
+  /* Fourth Article */
+  #fourth{
+    width:100%;
+    float:right;
+  }
+
+  #fourth table{
+    width:30%;
+    float:left;
+    margin:10px;
+    font-size: 13px;
+    background-color:#b47474;
+  }
+  /* Fifth Article */
+  #fifth{
+    width:100%;
+    float:right;
+  }
+
+  #fifth table{
+    width:30%;
+    float:right;
+    margin:10px;
+    font-size: 13px;
+    background-color:#b47474;
+  }
+
+  /*footer*/
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#394975;
+    text-align: center;
+  }
+
+
+
+  /* Sidebar */
+  /* The side navigation menu */
+.sidebar {
+  margin-right: 20px;
+  padding:1;
+  width: 110px;
+  background-color: #b47474;
+  position: fixed;
+  height: 60%;
+  overflow: auto;
+  }
+
+  /* Sidebar links */
+  .sidebar a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 12pt;
+  }
+
+  .sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  }
+
+  /* Media Queries- this option will allow the website to become available on different media devices/platforms */
+  @media(max-width: 750px){
+  header #tagline{
+    float:left;
+    text-shadow:2px 2px 2px #f80e0e;
+    text-align: center;
+  }
+  
+  header .logo img{
+    width:40%;
+    margin:0;
+  }
+  header nav, .container a,
+  header nav li,
+  #boxes .box{
+      width:100%;
+  }
+  table,
+  aside #sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  header{
+    padding-bottom:20px;
+  }
+  
+  #showcase h1{
+    margin-top:40px;
+  }
+  .sidebar {
+    width:auto;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left:5px;}
+  }
+    
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
